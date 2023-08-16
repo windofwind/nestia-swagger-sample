@@ -21,8 +21,7 @@ pnpm start
 
 ## nestia Swagger
 
-swagger는 주로 백엔드가 제공하며 api 문서를 만들어준다.  
-즉 아래 사진과 같은 문서를 만들어주는 도구이다.
+swagger는 주로 백엔드가 제공하며 api 문서를 만들어준다.
 
 1. 기존에 class-validator, class-transfommer 를 사용하고 있는 기준에서 아주 간단히 변경하는 방법을 이용했다.
 2. DTO 는 schema 에 남겻고 "nest", "nestia" prefix 를 붙였다.
@@ -35,6 +34,8 @@ swagger는 주로 백엔드가 제공하며 api 문서를 만들어준다.
 const useNestia: boolean = false; // useNestia 를 통해 swagger 옵션을 변경한다.
 ... {중략}
 ```
+
+- [swagger url](localhost:3000)
 
 ## 추가 사항
 
