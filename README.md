@@ -49,7 +49,7 @@ const useNestia: boolean = false; // useNestia 를 통해 swagger 옵션을 변�
   기본값이 undefined 면 @default 안쓴다. 빈값일때는 @default 만 써놓는다.
 - @tag 사용법
   swagger 공식문에서는 tags 이다. 타입은 string[] 이다. nestia에서는 1개씩 여러 라인 적는것으로 배열처럼 표기를 하고 있다.
-- @hidden 사용법
+- @hidden 사용법  
   DTO에는 포함대상이지만 유저가 직접 보내지 않는 값들을 감추는데 사용한다. 현재는 header에만 적용 되어있다(원작자왈 쿼리, 파람등에 지원여부는 미정). 스웨거에서는 보이지 않지만 validate 대상으로 포함됩니다. (v4.1.12 기준)  
   ex) user-ajent, authorization(이값은 스웨거 상단에 authorization 버튼을 눌러서 설정 한다- 스웨거 공식문서상 빠져야된다고 되어있다.), Accept, Content-Type, dns에서 제공하는 custom headers(클라우드플레어에서는 IP국가코드도 제공한다)  
   [ [참고 표 - Parameter Object - Fixed Fields][1] ]
