@@ -10,9 +10,10 @@ export class DefaultHeader {
   @IsString()
   'user-agent': string;
 
-  @ApiPropertyOptional({ default: '0.0.0.0', description: 'ip address' })
-  @IsIP()
-  ip: string;
+  @ApiPropertyOptional({ default: '/api', description: 'call page' })
+  @IsNotEmpty()
+  @IsString()
+  path: string;
 }
 
 /**
