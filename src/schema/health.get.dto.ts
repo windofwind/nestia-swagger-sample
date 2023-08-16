@@ -20,12 +20,24 @@ import { ApiProperty } from '@nestjs/swagger';
 export class ReqHealth extends DTOBaseRequest {}
 
 export class HealthCheck extends DTOBaseRequest {
+  /**
+   * uptime in seconds
+   *
+   * @type {number}
+   * @memberof HealthCheck
+   */
   @ApiProperty({ description: 'uptime in seconds' })
   @IsNotEmpty()
   @Min(0)
   @IsNumber()
   uptime: number;
 
+  /**
+   * text
+   *
+   * @type {string}
+   * @memberof HealthCheck
+   */
   @ApiProperty({ description: 'hello world' })
   @IsNotEmpty()
   @IsString()

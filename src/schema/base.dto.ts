@@ -6,7 +6,13 @@ import { ApiProperty } from '@nestjs/swagger';
 export class DTOBaseRequest {}
 
 export class DTOBaseResponse {
-  @ApiProperty({ description: '성공여부', default: true })
+  /**
+   * 성공 여부
+   *
+   * @type {boolean}
+   * @memberof DTOBaseResponse
+   */
+  @ApiProperty({ description: '성공 여부', default: true })
   success: boolean;
 
   constructor() {

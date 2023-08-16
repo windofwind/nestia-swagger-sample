@@ -46,7 +46,7 @@ export class AppController {
    *
    * @param {DefaultHeader} headers
    * @param {ReqLogin} payload
-   * @return {*}
+   * @return {Promise<ResLogin>}
    * @memberof AppController
    */
   @Post('/login')

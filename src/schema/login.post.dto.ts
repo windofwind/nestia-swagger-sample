@@ -7,11 +7,23 @@ import { Type } from 'class-transformer';
  * nest swagger
  */
 export class ReqLogin extends DTOBaseRequest {
+  /**
+   * 유저 아이디
+   *
+   * @type {string}
+   * @memberof ReqLogin
+   */
   @ApiProperty({ default: 'test', description: 'id' })
   @IsNotEmpty()
   @IsString()
   userId: string;
 
+  /**
+   * 유저 패스워드
+   *
+   * @type {string}
+   * @memberof ReqLogin
+   */
   @ApiProperty({ default: '1234', description: 'password' })
   @IsNotEmpty()
   @IsString()
@@ -31,7 +43,13 @@ export class LoginData {
 }
 
 export class ResLogin extends DTOBaseResponse {
-  @ApiProperty({ type: LoginData, description: '로그인데이터' })
+  /**
+   * 로그인 데이터
+   *
+   * @type {LoginData}
+   * @memberof ResLogin
+   */
+  @ApiProperty({ type: LoginData, description: '로그인 데이터' })
   @Type(() => LoginData)
   @ValidateNested()
   data: LoginData;

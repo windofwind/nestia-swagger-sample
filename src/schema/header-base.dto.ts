@@ -1,15 +1,27 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { IsIP, IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsString } from 'class-validator';
 
 /**
  * nest swagger
  */
 export class DefaultHeader {
+  /**
+   * user-agent
+   *
+   * @type {string}
+   * @memberof DefaultHeader
+   */
   @ApiProperty({ default: 'test client', description: 'browser user-agent' })
   @IsNotEmpty()
   @IsString()
   'user-agent': string;
 
+  /**
+   * 호출 페이지 경로
+   *
+   * @type {string}
+   * @memberof DefaultHeader
+   */
   @ApiPropertyOptional({ default: '/api', description: 'call page' })
   @IsNotEmpty()
   @IsString()
@@ -33,8 +45,8 @@ export class NestiaDefaultHeader {
   'user-agent': string;
 
   /**
-   * call page
-   * @summary call page
+   * 호출 페이지 경로
+   * @summary 호출 페이지 경로
    * @default /api
    *
    * @type {string}

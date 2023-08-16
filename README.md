@@ -9,6 +9,12 @@
 
 명확히 내가 사용하는것은 기능에 대해서만 설명할꺼고, 그게 nestia 기능 하나 swagger 에 대해서만 설명할려고 한다.
 
+## vscode extension 및 사전 준비물
+
+1.  [vscode - Document This](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) - jsdoc 형태 주석을 지원함(단축키 : ctrl+alt+D + D)
+2.  [nestia](https://nestia.io/docs/) - 삼촌님이 만든 nestia 문서
+3.  nestjs 프로젝트
+
 ## start and test
 
 1. 패키지 매니저는 pnpm을 사용하였다.
@@ -27,6 +33,8 @@ swagger는 주로 백엔드가 제공하며 api 문서를 만들어준다.
 2. DTO 는 schema 에 남겻고 "nest", "nestia" prefix 를 붙였다.
 3. 파일명에 "nest", "nestia"를 남겨서 구분 했다.
 4. nestia.config.ts 파일이 필요하다. (기존에는 없었음)
+5. 기존에 jsdoc 주석 형태를 작성하고 있었다면 더욱더 편리하게 바꿀 수 있다. (@xxx 태그 추가만으로 금방 끝난다.)  
+   나도 단것과 안단것이 있는데 흑흑..
 
 ```ts
 // main.ts
