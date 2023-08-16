@@ -69,7 +69,8 @@ const useNestia: boolean = false; // useNestia 를 통해 swagger 옵션을 변�
   config 파일(nestia.config.ts) 만 설정하여 사용할 수 있습니다.
 - nestia.config.ts 파일 옵션 - decompose  
   Swagger 에 DTO 출력이 아닌 DTO 풀어주는 방법은 config파일(nest.config.ts) 옵션 “decompose: true”를 사용한다.  
-  default 는 false 이며 DTO Object로 표기된다.
+  ex) 스웨거 페이지에서 파일을 추가한다던지 하면 파일 추가 관련 콤포넌트도 표기된다.
+  default 는 false 이며 DTO가 Object로 표기된다.
 - @throw 사용법  
   스웨거에 에러를 표기합니다.  
   “@throw 400 {}” 같이 사용합니다.
