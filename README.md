@@ -79,6 +79,7 @@ const useNestia: boolean = false; // useNestia 를 통해 swagger 옵션을 변�
   ps. document this 등의 jsDoc 제너레이터를 사용하는 경우에는 number 타입일 경우에는 바꿔주자\
 - `assertPrune<T>(data);`  
   이거 좋다. 아무리 복잡한 데이터가 있더라도 딱 내가 원하는 타입을 만들어서 넣어주면 다 잘라준다.
+- nestia swagger 에서는 response code를 method 에 따라 성공 200, 201 을 자동으로 붙여준다.
 
 # history - deleted - 기존 작성하다가 만것을 남긴다.
 
