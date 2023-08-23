@@ -34,6 +34,7 @@ export class DefaultHeader {
 export class NestiaDefaultHeader {
   /**
    * user-agent
+   * @hidden
    * @summary browser user-agent
    * @default test client
    *
@@ -52,7 +53,6 @@ export class NestiaDefaultHeader {
    * @type {string}
    * @memberof NestiaDefaultHeader
    */
-
   @IsNotEmpty()
   @IsString()
   path: string;
